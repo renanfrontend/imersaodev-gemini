@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogos para Xbox Series X/S e PS5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content"> 
+            <h1>Lista de Jogos</h1>
+            <button id="theme-toggle">Alternar Tema</button>
+        </div>
+        <div class="header-banner"></div> 
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Pesquisar jogo...">
+                <button id="search-button">Pesquisar</button>
+            </div>
+
+            <h2>Xbox Series X/S</h2>
+            <ul class="game-list">
+                <li>
+                    <img src="https://img.odcdn.com.br/wp-content/uploads/2021/11/HaloInfinite_Campaign01_3840x2160-WM.jpg" alt="Halo Infinite">
+                    <h3>Halo Infinite</h3>
+                </li>
+                <li>
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/capsule_616x353.jpg?t=1723160896" alt="Forza Horizon 5">
+                    <h3>Forza Horizon 5</h3>
+                </li>
+                <li>
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1714143624" alt="Microsoft Flight Simulator">
+                    <h3>Microsoft Flight Simulator</h3>
+                </li>
+            </ul>
+
+            <h2>PlayStation 5</h2>
+            <ul class="game-list">
+                <li>
+                    <img src="https://cdn1.epicgames.com/spt-assets/edaff839f0734d16bc89d2ddb1dc9339/steel-magnolia-15owu.jpg?h=270&quality=medium&resize=1&w=480" alt="God of War Ragnarök">
+                    <h3>God of War Ragnarök</h3>
+                </li>
+                <li>
+                    <img src="https://meups.com.br/wp-content/uploads/2020/06/Horizon-Forbidden-West_3.jpg" alt="Horizon Forbidden West">
+                    <h3>Horizon Forbidden West</h3>
+                </li>
+                <li>
+                    <img src="https://sm.ign.com/ign_br/game/m/marvels-sp/marvels-spider-man-miles-morales_du71.jpg" alt="Marvel's Spider-Man: Miles Morales">
+                    <h3>Marvel's Spider-Man: Miles Morales</h3>
+                </li>
+            </ul>
+        </div> 
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lista de Jogos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Lógica de pesquisa (você precisará implementar isso)
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+
+        searchButton.addEventListener('click', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            // ... Lógica para filtrar a lista de jogos com base em searchTerm
+        });
+
+        const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');   
+
+    });
+    </script>
+
+</body>
+</html>
