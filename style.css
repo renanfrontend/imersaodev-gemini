@@ -87,6 +87,7 @@ h2 {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
+    opacity: 0.75;
 }
 
 .game-list li {
@@ -97,6 +98,7 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     border-radius: 5px;
     overflow: hidden; 
+    background-color: rgb(209, 200, 200);
 }
 
 .game-list li img {
